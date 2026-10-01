@@ -7,6 +7,6 @@ Bileta
 
 Për secilin send ka fotografi, përshkrim dhe histori të fshehur.
 
-Teknologjite
-HTML
+Teknologjite:
+HTML,
 CSS
