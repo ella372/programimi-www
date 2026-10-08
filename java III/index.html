@@ -3,49 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Klinika e CSS: shpëto afishen</title>
+    <title>Afisha - Klubi i Debatit</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <a class="skip" href="#main">Kalo te përmbajtja</a>
+    <a class="skip-link" href="#main">Kalo te përmbajtja</a>
 
-    <div class="poster-container">
+    <div class="poster-wrapper">
       <header class="poster-header">
-        <p class="subtitle">Programimi në WWW · Zgjidhje reference</p>
-        <h1 class="main-title">Klubi i debatit</h1>
+        <span class="category-tag">Programimi në WWW · Klubi Studentor</span>
+        <h1 class="poster-title">Klubi i Debatit</h1>
       </header>
 
-      <hr class="divider" />
+      <div class="divider"></div>
 
       <main id="main" class="poster-card">
-        <div class="tags-group">
-          <span class="badge badge-free">Falas</span>
-          <span class="badge badge-limited">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
-              <polyline points="12 6 12 12 16 14"></polyline>
-            </svg>
+        <div class="badges-container">
+          <span class="tag tag-free">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+            Falas
+          </span>
+          <span class="tag tag-limited">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             Vende të kufizuara: 20
           </span>
-          <span class="badge badge-online">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-            </svg>
+          <span class="tag tag-online">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
             Edhe online
           </span>
         </div>
 
-        <h2 class="card-title">A duhet kampusi të ketë një kopsht të përbashkët?</h2>
-        <p class="event-details">8 tetor, ora 16:00 · Salla imagjinare B</p>
-        <p class="event-description">Sill një argument, dëgjo një mendim tjetër dhe ndrysho një ide.</p>
+        <h2 class="event-title">A duhet kampusi të ketë një kopsht të përbashkët?</h2>
+        <p class="event-time">🗓️ 8 tetor, ora 16:00 · 📍 Salla imagjinare B</p>
+        <p class="event-desc">Sill një argument, dëgjo një mendim tjetër dhe ndrysho një ide.</p>
 
-        <a href="#register" class="btn">Kërko informacion</a>
+        <a href="#register" class="action-btn">Kërko informacion</a>
       </main>
 
       <footer class="poster-footer">
-        Shembull mësimor · Të dhëna të sajuara · Vetëm front end
+        <p>Shembull mësimor · Të dhëna të sajuara · Vetëm front end</p>
       </footer>
     </div>
   </body>
