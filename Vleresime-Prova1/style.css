@@ -1,1 +1,29 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: system-ui, sans-serif;
+    margin: 1rem; 
+}
+
+article {
+    overflow-wrap: break-word;
+}
+
+#anetaret {
+     display: flex;
+     flex-direction: column;
+}
+
+
+@media(min-width:1000px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+a:focus-visible { 
+    outline: 3px solid blue; 
+    outline-offset: grey;
+ }
