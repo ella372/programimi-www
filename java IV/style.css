@@ -1,1 +1,170 @@
 
+/* Përfshin padding dhe border në madhësinë e elementeve */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    background-color: #f3f6fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* Menu fleksibile */
+header {
+    background-color: #172554;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 5%;
+}
+
+.logo {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.menu-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.4rem;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Pjesa hyrëse */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #dbeafe;
+}
+
+.hero h1 {
+    font-size: clamp(1.7rem, 4vw, 2.7rem);
+    overflow-wrap: anywhere;
+}
+
+/* Seksioni i aktiviteteve */
+#aktivitetet {
+    padding: 2rem 5%;
+}
+
+#aktivitetet > h2,
+.info h2 {
+    text-align: center;
+}
+
+/* Grid për kartat */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Pamja për tablet */
+@media (min-width: 600px) {
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Pamja për kompjuter */
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Dizajni i kartave */
+.card {
+    min-width: 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card h3,
+.card p {
+    overflow-wrap: anywhere;
+}
+
+.category {
+    color: #1d4ed8;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #1d4ed8;
+    font-weight: bold;
+}
+
+/* Seksioni informues */
+.info {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #e2e8f0;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #172554;
+    color: white;
+}
+
+/* E bën menynë më të përshtatshme për telefona */
+@media (max-width: 480px) {
+    .menu {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .menu-links {
+        gap: 0.5rem;
+    }
+}
+
+/* Tregon qartë elementin e zgjedhur me tastierë */
+a:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 4px;
+}
+
